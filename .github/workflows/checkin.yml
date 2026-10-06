@@ -3,7 +3,7 @@ name: Trae Daily Checkin
 on:
   schedule:
     # 北京时间每天 23:57（UTC 15:57）
-    - cron: "5 * * * *"
+    - cron: "57 15 * * *"
   workflow_dispatch: {}
 
 permissions:
