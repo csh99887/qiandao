@@ -132,7 +132,7 @@ def main():
     for index, session, device_id in accounts:
         # 多账号之间错开 3~6 秒随机间隔，降低请求密度，规避 9074「参与用户太多」风控
         if index > 1:
-            time.sleep(random.uniform(5, 7))
+            time.sleep(random.uniform(5, 6))
         name = "账号 %d" % index
         device_id = device_id or random_device_id()
         print("[%s] device_id=%s" % (name, device_id))
